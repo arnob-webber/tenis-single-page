@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+header .highlight {
+    color: #007BFF;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* .routine img {
+    width: 20%;
+    height: 20%;
+} */
+
+.routine {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product img {
+    /* width: 100px; */
+    height: auto;
+}
+
+.product h3 {
+    color: #007BFF;
+}
+
+@media (max-width: 600px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
